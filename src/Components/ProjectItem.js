@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 class ProjectItem extends Component {
   render() {
     return (
-      <div className="ProjectItem">
-        My Projects
-      </div>
+      <li className="Project">
+        {this.props.project.title} - {this.props.project.category}
+      </li>
     );
   }
 }
